@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body {
+  background-color: black;
+  font-size: 12px;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  border: 1px solid red;
+  width: 100%;
+  height: 98vh;
+}
+
+#attempts_tracker {
+ display: flex;
+ justify-content: space-between;
+ margin: auto;
+ font-size: 1rem;
+ font-family: Oswald;
+ color: lawngreen;
+ bordeR: 1px solid white;
+ padding: 0 .5rem;
+}
+
+#attempts_tracker  div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#section_2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 88%;
+  background-color: #333;
+  box-shadow: inset 0 0 3rem blue;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.card {
+  border-radius: 1rem;
+  height: 60%;
+  width: 60%;
+  margin:  0 auto;
+  cursor: pointer;
+  border: .125rem solid white;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  box-shadow: inset 0 0 1rem #000000;
+  border: .125rem solid gold;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#loseMessage, #matchMessage, #winMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 45.25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  z-index: 100;
+  color: yellow;
+  -webkit-text-stroke: .25rem black;
+  text-align: center;
+  box-shadow: 0 0 5rem yellow;
+  height: 80vh;
+  width: 50vw;
+  padding: 0;
+}
